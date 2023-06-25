@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="ar_marker">
+    <link name='link'>
+      <pose>0 0 5 0 0 0</pose>
+      <inertial>
+        <mass>0.390</mass>
+        <inertia>
+          <ixx>0.00058</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00058</iyy>
+          <iyz>0</iyz>
+          <izz>0.00019</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+          <box>
+		<size>1 1 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <box>
+		<size>1 1 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://ar_marker/materials/scripts</uri>
+            <uri>model://ar_marker/materials/textures</uri>
+            <name>AR_Marker/Diffuse</name>
+          </script>
+        </material>
+      </visual>
+      <gravity>0</gravity>
+    </link>
+  </model>
+	<gazebo>
+           <static>true</static>
+	   <gravity>0</gravity>
+	   <turnGravityOff>true</turnGravityOff>
+	</gazebo>
+</sdf>

@@ -1,0 +1,15 @@
+material Image_Marker/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture image.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
